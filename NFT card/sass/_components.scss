@@ -1,0 +1,32 @@
+$color-soft-blue:hsl(215, 51%, 70%);
+$color-cyan: hsl(178, 100%, 50%);
+$color-main: hsl(217, 54%, 11%);
+$color-card:hsl(216, 50%, 16%);
+$color-line: hsl(215, 32%, 27%);
+$color-white: hsl(0, 0%, 100%);
+
+$font-family: 'Outfit', sans-serif;
+
+.contenedor{
+    border-radius: 0.8rem;
+    box-shadow: -2px 13px 14px 23px $color-main;
+}
+
+.valor{
+    .icon-ethereum{
+        color:$color-cyan;
+        font-weight: 300;
+        font-size: 18px;
+    }
+}
+
+.creador{
+    
+    img{
+        width: 40px;
+        margin-right: 1rem;
+        border:1px solid $color-white;
+        border-radius: 100%;
+        
+    }
+}

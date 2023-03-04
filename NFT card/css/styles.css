@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+.contenedor {
+  border-radius: 0.8rem;
+  box-shadow: -2px 13px 14px 23px hsl(217, 54%, 11%);
+}
+
+.valor .icon-ethereum {
+  color: hsl(178, 100%, 50%);
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.creador img {
+  width: 40px;
+  margin-right: 1rem;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 100%;
+}
+
+body, .main {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.main .contenedor {
+  width: 400px;
+  background-color: hsl(216, 50%, 16%);
+}
+.main .contenedor .imagen {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.main .contenedor .imagen img {
+  border-radius: 0.8rem;
+  width: 90%;
+}
+.main .contenedor .imagen .capa-color {
+  position: absolute;
+  font-size: 4rem;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 0.8rem;
+}
+.main .contenedor .imagen .capa-color i {
+  visibility: hidden;
+}
+.main .contenedor .imagen .capa-color:hover {
+  background-color: hsl(178, 100%, 50%);
+  opacity: 0.5;
+}
+.main .contenedor .imagen .capa-color:hover i {
+  visibility: visible;
+}
+.main .contenedor .descripcion {
+  padding: 0.5rem 2rem 0rem 2rem;
+  margin-bottom: 2rem;
+}
+.main .contenedor .descripcion .titulo h1 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+.main .contenedor .descripcion .titulo h1:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+.main .contenedor .descripcion .parrafo p {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  font-weight: 300;
+}
+.main .contenedor .valor {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.main .contenedor .valor .ethereum {
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+.main .contenedor .valor .dias {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+.main .contenedor .creador {
+  padding-top: 1rem;
+  margin: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 18px;
+  border-top: 1px solid hsl(215, 32%, 27%);
+}
+.main .contenedor .creador p {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+.main .contenedor .creador p a {
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
+  text-decoration: none;
+}
+.main .contenedor .creador p a:hover {
+  color: hsl(178, 100%, 50%);
+}
+.main footer {
+  margin-top: 1rem;
+}
+.main footer .attribution {
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+}
+.main footer .attribution a {
+  color: hsl(178, 100%, 50%);
+  text-decoration: none;
+}
+
+@media (max-width: 375px) {
+  .main .contenedor {
+    width: 100%;
+    margin: 1rem;
+  }
+  .main .contenedor .imagen {
+    margin-top: 2rem;
+  }
+  .main .contenedor .imagen img {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

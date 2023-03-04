@@ -1,0 +1,153 @@
+@use "components";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+body,.main{
+    background-color: components.$color-main;
+    font-family: components.$font-family;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    margin-top: 3rem;
+    .contenedor{
+        width: 400px;
+        background-color: components.$color-card;
+        
+        .imagen{
+            position:relative;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 3rem;
+            img{
+                border-radius: 0.8rem;
+                width: 90%;
+                
+            }
+            .capa-color{
+                position:absolute;
+                font-size: 4rem;
+                width: 90%;
+                height: 100%;
+                display: flex;
+                align-items:center;
+                justify-content: center;
+                cursor: pointer;
+                border-radius: 0.8rem;
+                i{
+                    visibility: hidden;
+                }
+                &:hover{
+                    background-color: components.$color-cyan;
+                    opacity: 0.5;
+                    i{
+                        visibility: visible;
+                        //color:components.$color-white;
+                    }
+                }
+                
+            }
+
+            
+        }
+
+        .descripcion{
+            padding:0.5rem 2rem 0rem 2rem;
+            margin-bottom: 2rem;
+            .titulo{
+                h1{
+                    color:components.$color-white;
+                    font-weight: 400;
+                    &:hover{
+                        color:components.$color-cyan;
+                        cursor: pointer;
+                    }
+
+                }
+            }
+            .parrafo{
+                p{
+                    color:components.$color-soft-blue;
+                    font-size: 18px;
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .valor {
+            display:flex;
+            justify-content:space-between;
+            font-size: 18px;
+            
+            .ethereum{
+                color:components.$color-cyan;
+                font-weight: 400;
+
+            }
+
+            .dias{
+                color:components.$color-soft-blue;
+                font-weight: 300;
+            }
+        }
+
+        .creador{
+            padding-top:1rem;
+            margin: 1rem 2rem;
+            display: flex;
+            align-items:center;
+            justify-content: start;
+            font-size: 18px;
+            border-top: 1px solid components.$color-line;
+            
+            p{
+                color: components.$color-soft-blue;
+                font-weight:300;
+                a{
+                    color:components.$color-white;
+                    font-weight: 300; 
+                    text-decoration: none;
+                    &:hover{
+                        color:components.$color-cyan;
+                    }
+                }
+            }
+
+        }
+    }
+
+    footer{
+        margin-top: 1rem;
+        .attribution{
+            color: components.$color-white;
+            font-size: 18px;
+            a{
+                color:components.$color-cyan;
+                text-decoration: none;
+            }
+        }
+    }
+    
+    
+}
+
+@media (max-width:375px){
+    .main{  
+        .contenedor{
+            width: 100%;
+            margin: 1rem ;
+            
+            .imagen{
+                margin-top:2rem;
+                img{
+                    width: 80%;
+                }
+            }
+            
+        }
+    }
+}
